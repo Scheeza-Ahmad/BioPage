@@ -25,16 +25,18 @@ class MyApp extends StatelessWidget {
                     Container(
                       width: 150,
                       height: 150,
-                      margin: EdgeInsets.all(30),
+                      margin: EdgeInsets.all(20),
                       decoration: BoxDecoration(
-                        color: Colors.blueGrey,
+                        shape: BoxShape.circle,
                         border: Border.all(color: Colors.white, width: 3),
-                        borderRadius: BorderRadius.circular(100),
+                        image: DecorationImage(
+                          image: AssetImage('assets/images/photo.jpg'),
+                          fit: BoxFit.cover,
+                        ),
                       ),
                     ),
                   ],
                 ),
-
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
